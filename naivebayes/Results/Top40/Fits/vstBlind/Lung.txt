@@ -1,0 +1,21 @@
+Naive Bayes 
+
+ 92 samples
+343 predictors
+  2 classes: 'HC', 'Lung' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 3 times) 
+Summary of sample sizes: 83, 84, 82, 84, 83, 82, ... 
+Resampling results across tuning parameters:
+
+  usekernel  Accuracy   Kappa    
+  FALSE            NaN        NaN
+   TRUE      0.7603704  0.5066348
+
+Tuning parameter 'fL' was held constant at a value of 0
+Tuning
+ parameter 'adjust' was held constant at a value of 1
+Accuracy was used to select the optimal model using the largest value.
+The final values used for the model were fL = 0, usekernel = TRUE and adjust
+ = 1.

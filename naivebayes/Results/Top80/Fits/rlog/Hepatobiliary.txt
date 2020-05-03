@@ -1,0 +1,21 @@
+Naive Bayes 
+
+ 56 samples
+434 predictors
+  2 classes: 'HC', 'Hepatobiliary' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 3 times) 
+Summary of sample sizes: 51, 50, 50, 51, 51, 51, ... 
+Resampling results across tuning parameters:
+
+  usekernel  Accuracy   Kappa    
+  FALSE      0.8620635  0.4204227
+   TRUE      0.8387302  0.5283505
+
+Tuning parameter 'fL' was held constant at a value of 0
+Tuning
+ parameter 'adjust' was held constant at a value of 1
+Accuracy was used to select the optimal model using the largest value.
+The final values used for the model were fL = 0, usekernel = FALSE and adjust
+ = 1.

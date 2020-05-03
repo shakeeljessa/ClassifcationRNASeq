@@ -1,0 +1,12 @@
+""
+"Sensitivity",1
+"Specificity",0.636363636363636
+"Pos Pred Value",0.636363636363636
+"Neg Pred Value",1
+"Precision",0.636363636363636
+"Recall",1
+"F1",0.777777777777778
+"Prevalence",0.388888888888889
+"Detection Rate",0.388888888888889
+"Detection Prevalence",0.611111111111111
+"Balanced Accuracy",0.818181818181818

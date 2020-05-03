@@ -1,0 +1,113 @@
+
+#importing machine learning libraries.
+library(getopt)
+library(caret)
+library(ggplot2)
+source('/import.R')
+
+
+getCSV <- function(dirName){
+  x <- list.files(path = dirName,pattern =".csv",recursive = TRUE)
+  return(x)
+}
+
+ggplotConfusionMatrix <- function(m){
+  mytitle <- paste("Accuracy", percent_format()(m$overall[1]),
+                   "Kappa", percent_format()(m$overall[2]))
+  p <-
+    ggplot(data = as.data.frame(m$table) ,
+           aes(x = Reference, y = Prediction)) +
+    geom_tile(aes(fill = log(Freq)), colour = "white") +
+    scale_fill_gradient(low = "white", high = "steelblue") +
+    geom_text(aes(x = Reference, y = Prediction, label = Freq)) +
+    theme(legend.position = "none") +
+    ggtitle(mytitle)
+  return(p)
+}
+
+
+#must have samples on rows and attributes on columns
+spec = matrix(c('target_matrix', 'm', 1, 'character',
+                'feature', 'f', 1, 'character',
+                'output_file_name', 'o', 1, 'character',
+                'seed', 's', 2, 'integer',
+                'tune', 't', 2, 'integer'),
+              byrow = TRUE, ncol = 4)
+
+opt = getopt(spec)
+#Debugging
+#opt$target_matrix <- "../Subsets/rlog/Breast.csv "
+#opt$feature <- "cancer_type"
+#opt$last_dir <- "./prediction.csv"
+
+if(!is.null(opt$seed)) { set.seed(opt$seed) }
+if(is.null(opt$tune)) { opt$tune <- 10 }
+
+###Running Naive Bayes###
+for(i in getCSV(opt$target_matrix)){
+  
+    #trim file directory to just file name without extention ie. /subset/rlog/breast.csv -> breast
+    last_dir = basename(opt$target_matrix)
+    outputName <- sub(".*/","",i)
+    outputName <- sub('\\..*',"",outputName)
+    i <- trimws(i ,"l")
+    
+    
+    #Read in the targetMatrix
+    df <- read.csv(paste(opt$target_matrix, i, sep = ""), row.names = 1,check.names = FALSE)
+    
+    #split train and test dataframe from condition and non-condition
+    trainIndex <- createDataPartition(df[,ncol(df)], p=.8, list=FALSE)
+    dataTrain <- df[trainIndex,]
+    dataTest <- df[-trainIndex,]
+    
+    #Train with the train datasets
+    print("Training with Train Data Sets")
+    trainControl <- trainControl(method= "repeatedcv", number = 10, repeats = 3)
+    form <- as.formula(paste(opt$feature,"~."))
+    model = train(form, data = dataTrain, method = 'nb', trControl = trainControl)
+    
+    #Use test data set to predict and create confusion matrix
+    print("Predicitng with Test Data Sets")
+    x <- predict(model, newdata = dataTest)
+    cfm <- confusionMatrix(x,dataTest[,ncol(dataTest)])
+    
+    cfByClass <- data.frame(cfm[["byClass"]])
+    cfOverall <- data.frame(cfm[["overall"]])
+    colnames(cfByClass) <- NULL
+    colnames(cfOverall) <- NULL
+    
+    #Create predition dataframe
+    output <- data.frame(row.names = rownames(dataTest))
+    output$label <- dataTest[,ncol(dataTest)]
+    output$predicted <- x
+    
+    #Replicate directory
+    if(is.null(opt$output_file_name)){
+      opt$output_file_name <- ""
+    }
+    
+    print("Writing CSV")
+    dir.create(paste(opt$output_file_name,"ConfusionMatrices/",last_dir,sep=""), recursive =TRUE)
+    dir.create(paste(opt$output_file_name,"Predictions/",last_dir,sep = ""), recursive = TRUE)
+    dir.create(paste(opt$output_file_name,"Fits/",last_dir,sep =""), recursive = TRUE)
+    dir.create(paste(opt$output_file_name,"cfByClass/",last_dir,sep =""), recursive = TRUE)
+    dir.create(paste(opt$output_file_name,"cfOverall/",last_dir,sep =""), recursive = TRUE)
+    
+    #save outputs into corresponding files
+    print(outputName)
+    write.csv(output, file = generateFileDir(paste(opt$output_file_name,"Predictions/",last_dir,sep = ""), outputName,"csv"))
+    capture.output(cfm, file = generateFileDir(paste(opt$output_file_name,"ConfusionMatrices/",last_dir,sep=""), outputName, "txt"))
+    capture.output(model, file = generateFileDir(paste(opt$output_file_name,"Fits/",last_dir,sep =""), outputName, "txt"))
+    write.csv(cfByClass, file = generateFileDir(paste(opt$output_file_name,"cfByClass/",last_dir,sep = ""), outputName,"csv"))
+    write.csv(cfOverall, file = generateFileDir(paste(opt$output_file_name,"cfOverall/",last_dir,sep = ""), outputName,"csv"))
+    
+}
+
+#ggplotConfusionMatrix(x)
+#ggsave(outputName,plot = last_plot())
+
+
+
+
+
