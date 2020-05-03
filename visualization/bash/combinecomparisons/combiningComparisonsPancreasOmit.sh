@@ -1,0 +1,4 @@
+Rscript visualization/combineComparisons.R -m visualization/comparisonsPancreasOmit/KNN/overall/ -o visualization/combinedComparisonsPancreasOmit/ -n KNNoverall -r 7
+Rscript visualization/combineComparisons.R -m visualization/comparisonsPancreasOmit/KNN/byClass/ -o visualization/combinedComparisonsPancreasOmit/ -n KNNbyClass -r 11
+Rscript visualization/combineComparisons.R -m visualization/comparisonsPancreasOmit/naivebayes/overall/ -o visualization/combinedComparisonsPancreasOmit/ -n NBoverall -r 7
+Rscript visualization/combineComparisons.R -m visualization/comparisonsPancreasOmit/naivebayes/byClass/ -o visualization/combinedComparisonsPancreasOmit/ -n NBbyClass -r 11

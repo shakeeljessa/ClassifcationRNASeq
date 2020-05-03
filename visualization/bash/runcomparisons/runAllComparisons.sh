@@ -1,0 +1,5 @@
+bash visualization/bash/runcomparisons/runComparisons.sh
+bash visualization/bash/runcomparisons/runComparisonsTop80.sh
+bash visualization/bash/runcomparisons/runComparisonsTop60.sh
+bash visualization/bash/runcomparisons/runComparisonsTop40.sh
+bash visualization/bash/runcomparisons/runComparisonsTop20.sh

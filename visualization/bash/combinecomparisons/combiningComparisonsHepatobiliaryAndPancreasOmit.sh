@@ -1,0 +1,4 @@
+Rscript visualization/combineComparisons.R -m visualization/comparisonsHepatobiliaryAndPancreasOmit/KNN/overall/ -o visualization/combinedComparisonsHepatobiliaryAndPancreasOmit/ -n KNNoverall -r 7
+Rscript visualization/combineComparisons.R -m visualization/comparisonsHepatobiliaryAndPancreasOmit/KNN/byClass/ -o visualization/combinedComparisonsHepatobiliaryAndPancreasOmit/ -n KNNbyClass -r 11
+Rscript visualization/combineComparisons.R -m visualization/comparisonsHepatobiliaryAndPancreasOmit/naivebayes/overall/ -o visualization/combinedComparisonsHepatobiliaryAndPancreasOmit/ -n NBoverall -r 7
+Rscript visualization/combineComparisons.R -m visualization/comparisonsHepatobiliaryAndPancreasOmit/naivebayes/byClass/ -o visualization/combinedComparisonsHepatobiliaryAndPancreasOmit/ -n NBbyClass -r 11

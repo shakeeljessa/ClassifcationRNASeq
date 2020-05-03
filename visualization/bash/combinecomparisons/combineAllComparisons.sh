@@ -1,0 +1,5 @@
+bash visualization/bash/combinecomparisons/combiningComparisons.sh
+bash visualization/bash/combinecomparisons/combiningComparisonsTop80.sh
+bash visualization/bash/combinecomparisons/combiningComparisonsTop60.sh
+bash visualization/bash/combinecomparisons/combiningComparisonsTop40.sh
+bash visualization/bash/combinecomparisons/combiningComparisonsTop20.sh

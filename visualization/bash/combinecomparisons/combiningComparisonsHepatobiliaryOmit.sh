@@ -1,0 +1,4 @@
+Rscript visualization/combineComparisons.R -m visualization/comparisonsHepatobiliaryOmit/KNN/overall/ -o visualization/combinedComparisonsHepatobiliaryOmit/ -n KNNoverall -r 7
+Rscript visualization/combineComparisons.R -m visualization/comparisonsHepatobiliaryOmit/KNN/byClass/ -o visualization/combinedComparisonsHepatobiliaryOmit/ -n KNNbyClass -r 11
+Rscript visualization/combineComparisons.R -m visualization/comparisonsHepatobiliaryOmit/naivebayes/overall/ -o visualization/combinedComparisonsHepatobiliaryOmit/ -n NBoverall -r 7
+Rscript visualization/combineComparisons.R -m visualization/comparisonsHepatobiliaryOmit/naivebayes/byClass/ -o visualization/combinedComparisonsHepatobiliaryOmit/ -n NBbyClass -r 11
