@@ -1,0 +1,25 @@
+k-Nearest Neighbors 
+
+76 samples
+65 predictors
+ 2 classes: 'GBM', 'HC' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 3 times) 
+Summary of sample sizes: 69, 68, 69, 67, 69, 69, ... 
+Resampling results across tuning parameters:
+
+  k   Accuracy   Kappa    
+   5  0.8704365  0.7408537
+   7  0.9039021  0.8082245
+   9  0.9302249  0.8577920
+  11  0.9037698  0.8102067
+  13  0.9110450  0.8277625
+  15  0.8890212  0.7856546
+  17  0.8812831  0.7707657
+  19  0.8854497  0.7781187
+  21  0.8728175  0.7551817
+  23  0.8603175  0.7301817
+
+Kappa was used to select the optimal model using the largest value.
+The final value used for the model was k = 9.

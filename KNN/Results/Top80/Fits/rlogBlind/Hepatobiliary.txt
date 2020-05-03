@@ -1,0 +1,25 @@
+k-Nearest Neighbors 
+
+ 56 samples
+434 predictors
+  2 classes: 'HC', 'Hepatobiliary' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 3 times) 
+Summary of sample sizes: 50, 51, 51, 50, 51, 51, ... 
+Resampling results across tuning parameters:
+
+  k   Accuracy   Kappa    
+   5  0.6720635  0.4101152
+   7  0.7320635  0.4949128
+   9  0.7290476  0.4837878
+  11  0.7715873  0.5480453
+  13  0.7660317  0.5494883
+  15  0.7593651  0.5343368
+  17  0.7826984  0.5734421
+  19  0.7749206  0.5542258
+  21  0.7809524  0.4692308
+  23  0.7876190  0.0000000
+
+Kappa was used to select the optimal model using the largest value.
+The final value used for the model was k = 17.

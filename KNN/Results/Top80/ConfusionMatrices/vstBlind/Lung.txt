@@ -1,0 +1,27 @@
+Confusion Matrix and Statistics
+
+          Reference
+Prediction HC Lung
+      HC    4    1
+      Lung  7   11
+                                          
+               Accuracy : 0.6522          
+                 95% CI : (0.4273, 0.8362)
+    No Information Rate : 0.5217          
+    P-Value [Acc > NIR] : 0.1483          
+                                          
+                  Kappa : 0.2868          
+                                          
+ Mcnemar's Test P-Value : 0.0771          
+                                          
+            Sensitivity : 0.3636          
+            Specificity : 0.9167          
+         Pos Pred Value : 0.8000          
+         Neg Pred Value : 0.6111          
+             Prevalence : 0.4783          
+         Detection Rate : 0.1739          
+   Detection Prevalence : 0.2174          
+      Balanced Accuracy : 0.6402          
+                                          
+       'Positive' Class : HC              
+                                          

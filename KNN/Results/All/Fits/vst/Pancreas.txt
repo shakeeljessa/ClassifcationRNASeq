@@ -1,0 +1,25 @@
+k-Nearest Neighbors 
+
+ 72 samples
+976 predictors
+  2 classes: 'HC', 'Pancreas' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 3 times) 
+Summary of sample sizes: 65, 65, 66, 66, 64, 64, ... 
+Resampling results across tuning parameters:
+
+  k   Accuracy   Kappa    
+   5  0.8376984  0.6918090
+   7  0.8178571  0.6541338
+   9  0.8087302  0.6442760
+  11  0.8095238  0.6475833
+  13  0.8097222  0.6482035
+  15  0.7869048  0.6049877
+  17  0.7863095  0.6029083
+  19  0.7765873  0.5874834
+  21  0.7615079  0.5614574
+  23  0.7567460  0.5528420
+
+Kappa was used to select the optimal model using the largest value.
+The final value used for the model was k = 5.

@@ -1,0 +1,25 @@
+k-Nearest Neighbors 
+
+ 76 samples
+404 predictors
+  2 classes: 'Breast', 'HC' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 3 times) 
+Summary of sample sizes: 67, 69, 69, 69, 69, 69, ... 
+Resampling results across tuning parameters:
+
+  k   Accuracy   Kappa    
+   5  0.7112434  0.4727089
+   7  0.7112434  0.4727089
+   9  0.7154101  0.4797694
+  11  0.7291005  0.5016251
+  13  0.7243386  0.4949207
+  15  0.7249339  0.4970002
+  17  0.7302910  0.5062398
+  19  0.7207672  0.4865770
+  21  0.7291005  0.5022633
+  23  0.7380291  0.5183950
+
+Kappa was used to select the optimal model using the largest value.
+The final value used for the model was k = 23.

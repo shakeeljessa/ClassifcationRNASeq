@@ -1,0 +1,27 @@
+Confusion Matrix and Statistics
+
+          Reference
+Prediction Breast HC
+    Breast      7  7
+    HC          0  4
+                                         
+               Accuracy : 0.6111         
+                 95% CI : (0.3575, 0.827)
+    No Information Rate : 0.6111         
+    P-Value [Acc > NIR] : 0.60174        
+                                         
+                  Kappa : 0.3077         
+                                         
+ Mcnemar's Test P-Value : 0.02334        
+                                         
+            Sensitivity : 1.0000         
+            Specificity : 0.3636         
+         Pos Pred Value : 0.5000         
+         Neg Pred Value : 1.0000         
+             Prevalence : 0.3889         
+         Detection Rate : 0.3889         
+   Detection Prevalence : 0.7778         
+      Balanced Accuracy : 0.6818         
+                                         
+       'Positive' Class : Breast         
+                                         

@@ -1,0 +1,25 @@
+k-Nearest Neighbors 
+
+ 92 samples
+856 predictors
+  2 classes: 'HC', 'Lung' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 3 times) 
+Summary of sample sizes: 82, 83, 82, 83, 82, 84, ... 
+Resampling results across tuning parameters:
+
+  k   Accuracy   Kappa    
+   5  0.7895370  0.5656106
+   7  0.7858333  0.5563849
+   9  0.7750926  0.5357809
+  11  0.7858333  0.5592681
+  13  0.7787963  0.5459569
+  15  0.7858333  0.5592681
+  17  0.7858333  0.5581396
+  19  0.7858333  0.5581396
+  21  0.7750926  0.5364071
+  23  0.7750926  0.5378597
+
+Kappa was used to select the optimal model using the largest value.
+The final value used for the model was k = 5.

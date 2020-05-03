@@ -1,0 +1,25 @@
+k-Nearest Neighbors 
+
+ 78 samples
+637 predictors
+  2 classes: 'CRC', 'HC' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 3 times) 
+Summary of sample sizes: 70, 70, 70, 69, 71, 71, ... 
+Resampling results across tuning parameters:
+
+  k   Accuracy   Kappa    
+   5  0.6391534  0.3362752
+   7  0.6123677  0.2904137
+   9  0.5991402  0.2711720
+  11  0.5818783  0.2418347
+  13  0.5740079  0.2268569
+  15  0.5740079  0.2268569
+  17  0.5609127  0.2052832
+  19  0.5609127  0.2052832
+  21  0.5603175  0.2031389
+  23  0.5650794  0.2105464
+
+Kappa was used to select the optimal model using the largest value.
+The final value used for the model was k = 5.
