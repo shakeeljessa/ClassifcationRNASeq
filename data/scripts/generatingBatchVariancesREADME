@@ -1,0 +1,26 @@
+CREDIT: Dhivya Arasappan for providing original script we modified to create this version of the script.
+
+README for filter.R
+
+IMPORTANT: RUN SCRIPT FROM classification/data DIRECTORY
+EX Rscript scripts/generatingBatchVariances.R
+
+Requirements:
+tidyverse library
+DESeq2 library
+import.R script
+BiocParallel (optional) - currently hardcoded to utilize 8 cores for DESeq2
+
+Parameters:
+none (currently hardcoded. will need to edit later)
+
+The series annotations and counts matrix file must be tap delimited.
+In the counts matrix, the row index must be genes and the column index must be samples.
+
+It is recommended that the series annotations tsv is cut down to the necessary information, being the class type along with other relevant information.
+
+The annotation file must have the analyzed characteristic defined as cancer_type for best functionality.
+
+After running the script, run the following commands in terminal:
+sed 's/,/\t/g' DESeq2-genes_affected_by_batch_LRT.csv|awk '{if ((($3>=2)||($3<=-2))&&($7<=0.01)) print $1}' > genes_affected_by_batch
+sed 's/\"//g' genes_affected_by_batch -i

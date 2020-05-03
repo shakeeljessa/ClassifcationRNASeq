@@ -1,0 +1,35 @@
+BREAST:
+55 NOT cancer
+39 cancer
+TOTAL: 94
+41.489% cancer
+
+CRC (COLON):
+55 NOT cancer
+42 cancer
+TOTAL: 97
+43.299% cancer
+
+GBM:
+55 NOT cancer
+40 cancer
+TOTAL: 95
+42.105% cancer
+
+HEPATOBILIARY:
+55 NOT cancer
+14 cancer
+TOTAL: 69
+20.290% cancer
+
+LUNG:
+55 NOT cancer
+60 cancer
+TOTAL: 115
+52.174% cancer
+
+PANCREAS:
+55 NOT cancer
+35 cancer
+TOTAL: 90
+38.889% cancer

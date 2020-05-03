@@ -1,0 +1,21 @@
+README for GenerateElbowPlot.R
+
+Function: generates an elbow plot for a given counts matrix.
+
+IMPORTANT: RUN SCRIPT FROM classification/data DIRECTORY
+Ex: Rscript data/GenerateElbowPlot.R <parameters>
+
+Requirements:
+factoextra
+ggsignif
+gridExtra
+getopt
+
+Parameters:
+-n : subset file name. counts matrix for a specific subset of your data such as cancer/no cancer, etc.
+ex: -n tables/processedsubsets/rlog/Breast.csv
+-o : output file name. pdf file will be output to this file
+ex: -o elbowplots/Breast.csv
+-s : seed used to generate random numbers (optional). if none given, will use one R provides.
+
+Will generate a pdf file testing various numbers of k in order to find optimal k for knn algorithm.

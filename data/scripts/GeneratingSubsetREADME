@@ -1,0 +1,14 @@
+README for GeneratingSubset.R
+
+IMPORTANT: RUN SCRIPT FROM classification/data DIRECTORY
+EX Rscript scripts/GeneratingSubset.R <parameters>
+
+Requirements:
+getopt library
+import.R script
+
+Parameters:
+
+-n : normalized count matrix file name. the counts matrix after it has been normalized through some sort of processing (vst or rlog, blind or not blind).
+-d : DESeq file name. the output DESeq results that is written out by DESeq.
+-a : annotation matrix. 
