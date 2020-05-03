@@ -1,0 +1,8 @@
+"Var1" "Freq"
+"1" "Accuracy" 0.956521739130435
+"2" "Kappa" 0.91254752851711
+"3" "AccuracyLower" 0.78051339254652
+"4" "AccuracyUpper" 0.998899831369559
+"5" "AccuracyNull" 0.521739130434783
+"6" "AccuracyPValue" 7.00636984347578e-06
+"7" "McnemarPValue" 1
