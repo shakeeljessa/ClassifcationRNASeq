@@ -1,0 +1,26 @@
+Support Vector Machines with Radial Basis Function Kernel 
+
+ 72 samples
+781 predictors
+  2 classes: 'HC', 'Pancreas' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 3 times) 
+Summary of sample sizes: 65, 65, 64, 65, 64, 66, ... 
+Resampling results across tuning parameters:
+
+  C       Accuracy   Kappa    
+    0.25  0.9055556  0.7924244
+    0.50  0.9091270  0.7980890
+    1.00  0.9242063  0.8278330
+    2.00  0.9434524  0.8699303
+    4.00  0.9426587  0.8752524
+    8.00  0.9426587  0.8752524
+   16.00  0.9426587  0.8752524
+   32.00  0.9426587  0.8752524
+   64.00  0.9426587  0.8752524
+  128.00  0.9426587  0.8752524
+
+Tuning parameter 'sigma' was held constant at a value of 0.001298542
+Kappa was used to select the optimal model using the largest value.
+The final values used for the model were sigma = 0.001298542 and C = 4.

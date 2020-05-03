@@ -1,0 +1,25 @@
+Random Forest 
+
+ 72 samples
+781 predictors
+  2 classes: 'HC', 'Pancreas' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 3 times) 
+Summary of sample sizes: 66, 65, 64, 64, 65, 65, ... 
+Resampling results across tuning parameters:
+
+  mtry  Accuracy   Kappa    
+    2   0.8964286  0.7976001
+    3   0.9011905  0.8084890
+    7   0.8916667  0.7853636
+   14   0.8922619  0.7873440
+   28   0.8875000  0.7780107
+   55   0.8833333  0.7696774
+  106   0.8640873  0.7307547
+  207   0.8646825  0.7325663
+  402   0.8646825  0.7325663
+  781   0.8432540  0.6858854
+
+Kappa was used to select the optimal model using the largest value.
+The final value used for the model was mtry = 3.

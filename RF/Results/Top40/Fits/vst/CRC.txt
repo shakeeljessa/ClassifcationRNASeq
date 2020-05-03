@@ -1,0 +1,25 @@
+Random Forest 
+
+ 78 samples
+637 predictors
+  2 classes: 'CRC', 'HC' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 3 times) 
+Summary of sample sizes: 70, 71, 69, 71, 70, 71, ... 
+Resampling results across tuning parameters:
+
+  mtry  Accuracy   Kappa    
+    2   0.8882275  0.7866400
+    3   0.9050265  0.8156312
+    7   0.8913360  0.7901905
+   13   0.8971561  0.8016337
+   25   0.8880952  0.7842381
+   49   0.8708333  0.7490526
+   93   0.8707011  0.7497414
+  176   0.8849868  0.7771625
+  335   0.8849868  0.7732969
+  636   0.8766534  0.7571926
+
+Kappa was used to select the optimal model using the largest value.
+The final value used for the model was mtry = 3.

@@ -1,0 +1,26 @@
+Support Vector Machines with Radial Basis Function Kernel 
+
+ 92 samples
+514 predictors
+  2 classes: 'HC', 'Lung' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 3 times) 
+Summary of sample sizes: 83, 84, 82, 82, 83, 83, ... 
+Resampling results across tuning parameters:
+
+  C       Accuracy   Kappa    
+    0.25  0.8308333  0.6592290
+    0.50  0.8229630  0.6428469
+    1.00  0.8262963  0.6495135
+    2.00  0.8105556  0.6181067
+    4.00  0.8130556  0.6234551
+    8.00  0.8237963  0.6458910
+   16.00  0.8130556  0.6245029
+   32.00  0.8167593  0.6325798
+   64.00  0.8237963  0.6458910
+  128.00  0.8200926  0.6378141
+
+Tuning parameter 'sigma' was held constant at a value of 0.002420648
+Kappa was used to select the optimal model using the largest value.
+The final values used for the model were sigma = 0.002420648 and C = 0.25.

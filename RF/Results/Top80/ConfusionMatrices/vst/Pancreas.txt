@@ -1,0 +1,27 @@
+Confusion Matrix and Statistics
+
+          Reference
+Prediction HC Pancreas
+  HC       10        1
+  Pancreas  1        6
+                                          
+               Accuracy : 0.8889          
+                 95% CI : (0.6529, 0.9862)
+    No Information Rate : 0.6111          
+    P-Value [Acc > NIR] : 0.01052         
+                                          
+                  Kappa : 0.7662          
+                                          
+ Mcnemar's Test P-Value : 1.00000         
+                                          
+            Sensitivity : 0.9091          
+            Specificity : 0.8571          
+         Pos Pred Value : 0.9091          
+         Neg Pred Value : 0.8571          
+             Prevalence : 0.6111          
+         Detection Rate : 0.5556          
+   Detection Prevalence : 0.6111          
+      Balanced Accuracy : 0.8831          
+                                          
+       'Positive' Class : HC              
+                                          

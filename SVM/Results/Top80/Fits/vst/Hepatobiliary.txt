@@ -1,0 +1,26 @@
+Support Vector Machines with Radial Basis Function Kernel 
+
+ 56 samples
+434 predictors
+  2 classes: 'HC', 'Hepatobiliary' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 3 times) 
+Summary of sample sizes: 51, 50, 51, 49, 51, 50, ... 
+Resampling results across tuning parameters:
+
+  C       Accuracy   Kappa    
+    0.25  0.9431746  0.8355976
+    0.50  0.9376190  0.8213119
+    1.00  0.9593651  0.8705019
+    2.00  0.9593651  0.8705019
+    4.00  0.9593651  0.8705019
+    8.00  0.9641270  0.8806468
+   16.00  0.9707937  0.8957983
+   32.00  0.9593651  0.8705019
+   64.00  0.9641270  0.8806468
+  128.00  0.9593651  0.8705019
+
+Tuning parameter 'sigma' was held constant at a value of 0.001532068
+Kappa was used to select the optimal model using the largest value.
+The final values used for the model were sigma = 0.001532068 and C = 16.

@@ -1,0 +1,27 @@
+Confusion Matrix and Statistics
+
+               Reference
+Prediction      HC Hepatobiliary
+  HC            11             1
+  Hepatobiliary  0             1
+                                          
+               Accuracy : 0.9231          
+                 95% CI : (0.6397, 0.9981)
+    No Information Rate : 0.8462          
+    P-Value [Acc > NIR] : 0.3834          
+                                          
+                  Kappa : 0.6286          
+                                          
+ Mcnemar's Test P-Value : 1.0000          
+                                          
+            Sensitivity : 1.0000          
+            Specificity : 0.5000          
+         Pos Pred Value : 0.9167          
+         Neg Pred Value : 1.0000          
+             Prevalence : 0.8462          
+         Detection Rate : 0.8462          
+   Detection Prevalence : 0.9231          
+      Balanced Accuracy : 0.7500          
+                                          
+       'Positive' Class : HC              
+                                          

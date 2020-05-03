@@ -1,0 +1,25 @@
+Random Forest 
+
+ 56 samples
+434 predictors
+  2 classes: 'HC', 'Hepatobiliary' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 3 times) 
+Summary of sample sizes: 50, 51, 51, 51, 50, 50, ... 
+Resampling results across tuning parameters:
+
+  mtry  Accuracy   Kappa    
+    2   0.8701587  0.5096295
+   50   0.9415873  0.7249300
+   98   0.9293651  0.6582633
+  146   0.9349206  0.6915966
+  194   0.9238095  0.6439776
+  242   0.9293651  0.6773109
+  290   0.9238095  0.6439776
+  338   0.9293651  0.6582633
+  386   0.8973016  0.5760364
+  434   0.9226984  0.6765966
+
+Kappa was used to select the optimal model using the largest value.
+The final value used for the model was mtry = 50.

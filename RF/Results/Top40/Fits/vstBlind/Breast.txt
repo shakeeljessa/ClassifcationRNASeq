@@ -1,0 +1,25 @@
+Random Forest 
+
+ 76 samples
+270 predictors
+  2 classes: 'Breast', 'HC' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 3 times) 
+Summary of sample sizes: 68, 68, 69, 69, 69, 68, ... 
+Resampling results across tuning parameters:
+
+  mtry  Accuracy   Kappa    
+    2   0.8612434  0.7273801
+   31   0.8685185  0.7389173
+   61   0.8595899  0.7203468
+   91   0.8542328  0.7122992
+  121   0.8673280  0.7364680
+  150   0.8637566  0.7346224
+  180   0.8679233  0.7386411
+  210   0.8643519  0.7387367
+  240   0.8769841  0.7591818
+  270   0.8674603  0.7411178
+
+Kappa was used to select the optimal model using the largest value.
+The final value used for the model was mtry = 240.

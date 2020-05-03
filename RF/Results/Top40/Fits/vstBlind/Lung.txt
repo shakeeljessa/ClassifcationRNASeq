@@ -1,0 +1,25 @@
+Random Forest 
+
+ 92 samples
+343 predictors
+  2 classes: 'HC', 'Lung' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 3 times) 
+Summary of sample sizes: 83, 82, 82, 82, 83, 83, ... 
+Resampling results across tuning parameters:
+
+  mtry  Accuracy   Kappa    
+    2   0.8777778  0.7520014
+   39   0.8699074  0.7359758
+   77   0.8699074  0.7359758
+  115   0.8728704  0.7403475
+  153   0.8753704  0.7473860
+  191   0.8753704  0.7473860
+  229   0.8728704  0.7439194
+  267   0.8753704  0.7473860
+  305   0.8728704  0.7423860
+  343   0.8683333  0.7337507
+
+Kappa was used to select the optimal model using the largest value.
+The final value used for the model was mtry = 2.

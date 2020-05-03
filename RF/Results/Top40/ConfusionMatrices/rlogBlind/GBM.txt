@@ -1,0 +1,27 @@
+Confusion Matrix and Statistics
+
+          Reference
+Prediction GBM HC
+       GBM   5  0
+       HC    3 11
+                                          
+               Accuracy : 0.8421          
+                 95% CI : (0.6042, 0.9662)
+    No Information Rate : 0.5789          
+    P-Value [Acc > NIR] : 0.01478         
+                                          
+                  Kappa : 0.6587          
+                                          
+ Mcnemar's Test P-Value : 0.24821         
+                                          
+            Sensitivity : 0.6250          
+            Specificity : 1.0000          
+         Pos Pred Value : 1.0000          
+         Neg Pred Value : 0.7857          
+             Prevalence : 0.4211          
+         Detection Rate : 0.2632          
+   Detection Prevalence : 0.2632          
+      Balanced Accuracy : 0.8125          
+                                          
+       'Positive' Class : GBM             
+                                          
