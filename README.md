@@ -1,2 +1,2 @@
 # ClassifcationRNASeq
-Classification of RNA-Seq Cancer Data Undergraduate Thesis (Shakeel Jessa)
+This repository exists to serve as an online reference for the UT CCBB 
